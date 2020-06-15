@@ -19,12 +19,9 @@ const vResult = document.getElementById('v-r');
 const sT = document.getElementById('st');
 const stResult = document.getElementById('st-r');
 
-var in3 = new IN3({
-    proof              : 'standard',
-    signatureCount     : 1,
-    chainId            : 'mainnet',
-    replaceLatestBlock : 10
-});
+var in3 = new IN3(
+    "https://mainnet.infura.io/v3/c5787339db824d0c8383ce97bff4dbb1"
+);
  const myTokenContract = '0x6C095A05764A23156eFD9D603eaDa144a9B1AF33'
     
     nodeRD.addEventListener('click', (e) => {
